@@ -7,7 +7,7 @@ export const saveReport = async (
   report
 ) => {
   const response = await axios.post(
-    `${API}/save`,
+    `${API}/save/`,
     report
   );
 

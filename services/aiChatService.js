@@ -11,7 +11,7 @@ export const sendMessage =
 
     const response =
       await axios.post(
-        `${API_URL}/chat`,
+        `${API_URL}/chat/`,
         {
           message,
           document,

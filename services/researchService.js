@@ -8,7 +8,7 @@ export const runResearch =
 
     const response =
       await axios.post(
-        `${API_URL}/research`,
+        `${API_URL}/research/`,
         {
           company,
         }

@@ -8,7 +8,7 @@ export const signup =
 
     const response =
       await axios.post(
-        `${API_URL}/auth/signup`,
+        `${API_URL}/auth/signup/`,
         userData
       );
 
