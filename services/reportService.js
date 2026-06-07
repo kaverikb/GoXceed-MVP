@@ -7,7 +7,7 @@ export const saveReport = async (
   report
 ) => {
   const response = await axios.post(
-    `${API}/save`,
+    `${API}/reports/save`,
     report
   );
 
@@ -16,7 +16,7 @@ export const saveReport = async (
 
 export const getReports = async () => {
   const response = await axios.get(
-    API
+    `${API}/reports`
   );
 
   return response.data;
@@ -26,7 +26,7 @@ export const getReportById = async (
   id
 ) => {
   const response = await axios.get(
-    `${API}/${id}`
+    `${API}/reports/${id}`
   );
 
   return response.data;
@@ -36,7 +36,7 @@ export const deleteReport = async (
   id
 ) => {
   const response = await axios.delete(
-    `${API}/${id}`
+    `${API}/reports/${id}`
   );
 
   return response.data;
