@@ -16,7 +16,7 @@ export const saveReport = async (
 
 export const getReports = async () => {
   const response = await axios.get(
-    `${API}/reports`
+    `${API}/reports/`
   );
 
   return response.data;
