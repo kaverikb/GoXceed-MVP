@@ -14,8 +14,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173"
-        "https://go-xceed-mvp.vercel.app"
+        "http://localhost:5173",
+        "https://go-xceed-mvp.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -27,6 +27,7 @@ app.include_router(chat_router)
 app.include_router(research_router)
 app.include_router(documents_router)
 app.include_router(reports_router)
+
 
 @app.get("/")
 def home():
