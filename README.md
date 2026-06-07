@@ -140,7 +140,7 @@ uvicorn app:app --reload
 Backend runs at:
 
 ```text
-http://127.0.0.1:8000
+http://https://mvp-backend-production-2943.up.railway.app:8000
 ```
 
 ---
