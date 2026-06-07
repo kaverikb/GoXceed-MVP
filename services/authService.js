@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL =
-  "http://127.0.0.1:8000";
+  "https://mvp-backend-production-2943.up.railway.app";
 
 export const signup =
   async (userData) => {
